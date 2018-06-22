@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the IngresandoPage page.
+ * Generated class for the IniciarPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,16 +10,22 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-ingresando',
-  templateUrl: 'ingresando.html',
+  selector: 'page-iniciar',
+  templateUrl: 'iniciar.html',
 })
-export class IngresandoPage {
+export class IniciarPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad IngresandoPage');
+    console.log('ionViewDidLoad IniciarPage');
+  }
+
+    IniciarSesion(){
+
+      this.navCtrl.push(IniciarPage);
+
   }
 
 }

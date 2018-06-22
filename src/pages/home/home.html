@@ -6,9 +6,29 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+
+  <ion-card>
+
+    <img src="https://www.mundogato.net/wp-content/uploads/gif-de-gatitos-tiernos.gif"/>
+
+    <ion-card-content>
+      <ion-card-title>
+        Gatitos-Chan
+      </ion-card-title>
+      <p>
+        Inicie Sesión si quiere ver gatitos
+      </p>
+    </ion-card-content>
+
+    <ion-item>
+        <ion-icon name="arrow-dropright"></ion-icon>
+        &nbsp; Iniciar
+        <button color="blue" ion-button clear item-end (click)="IniciarSesion()">
+            Ingresar
+          </button>
+    </ion-item>
+
+  </ion-card>
+
 </ion-content>

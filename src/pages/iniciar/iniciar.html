@@ -1,0 +1,32 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>iniciar sesión</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <form ng-submit="dologin()">
+        <div class="list">
+            <ion-label>Ingrese su Usuario</ion-label>
+          <label class="item item-input"><br>
+              <input type="text" ng-model="loginData.username">     
+          </label><br>
+          <ion-label>Ingrese su Contraseña</ion-label>
+          <label class="item item-input"><br>
+              <input type="password" ng-model="loginData.password">     
+          </label><br><br><br>
+          <button ion-button color="#440123" type="submit" block (click)="Iniciar()">Iniciar</button>
+        </div>
+    </form>
+    <br><br><br>
+    <ion-item>
+          <ion-icon name="arrow-dropright"></ion-icon>
+          &nbsp; Provisorio pasa
+          <button color="blue" ion-button clear item-end (click)="Pagina()">
+              Ingresar
+            </button>
+    </ion-item>
+</ion-content>
