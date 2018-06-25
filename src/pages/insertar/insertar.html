@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Insertar Nombre
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-input [(ngModel)]="nombre"></ion-input>
+  </ion-item>
+
+  <button (click)="btnAddClicked()" ion-button>Agregar</button>
+
+</ion-content>

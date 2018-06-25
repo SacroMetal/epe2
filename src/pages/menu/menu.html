@@ -1,0 +1,35 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Seleccione Opción</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="card-background-page">
+
+  <ion-card (click)="iraMostrar()">
+    <img src="assets/imgs/gatitollegando.jpg"/>
+    <div class="card-title">Gatitos </div>
+    <div class="card-subtitle">Ingresados</div>
+  </ion-card>
+
+  <ion-card (click)="iraInsertar()">
+    <img src="assets/imgs/gatitosinsertar.jpg"/>
+    <div class="card-title">Registrar</div>
+    <div class="card-subtitle">Gatito</div>
+  </ion-card>
+
+  <ion-card (click)="iraEliminar()">
+    <img src="assets/imgs/gatitoseliminar.jpg"/>
+    <div class="card-title">Eliminar </div>
+    <div class="card-subtitle">Gatitos</div>
+  </ion-card>
+
+  <ion-card (click)="iraModificar()">
+    <img src="assets/imgs/gatitomostrar.jpg"/>
+    <div class="card-title">Modificar Registro </div>
+    <div class="card-subtitle">Gatitos</div>
+  </ion-card>
+
+</ion-content>
